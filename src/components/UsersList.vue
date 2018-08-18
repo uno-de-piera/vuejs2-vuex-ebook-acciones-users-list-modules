@@ -31,10 +31,10 @@
             this.fetchUsers()
         },
         methods: {
-            ...mapActions(['fetchUsers'])
+            ...mapActions('usersModule', ['fetchUsers'])
         },
         computed: {
-            ...mapState(['users'])
+            ...mapState('usersModule', ['users'])
         }
     }
 </script>
